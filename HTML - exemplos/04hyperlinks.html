@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyperlinks</title>
+</head>
+<body>
+    <h1>hyperlinks</h1>
+    <p>Eles nos permitem vincular nossos documentos a qualquer outro documento (ou outro recurso) que queremos. Qualquer conteúdo da web pode ser convertido em um link, para que, quando clicado (ou ativado de outra forma) fará com que o navegador vá para outro endereço</p>
+
+    <br><br>
+
+    <h2>Anatomia de um link</h2>
+    <p>
+        Um link básico é criado envolvendo o texto que você quer transformar em um link dentro de um elemento < a > e dando-lhe um atributo href (Hypertext Reference).
+    </p>
+
+    <p>
+        Esta é a estrutura de um link: < a href="">, o href pode receber:
+        <ul>
+            <li>Link: <b>"https://htmlreference.io"</b> </li>
+            <li>Caminho de pastas do seu arquivo: <b>"/element/div"</b> </li>
+            <li>Segmentar um elemento da mesma página com ID: <b>"#footer"</b></li>
+            <li>Mailto: <b>mailto:alex@smith.com</b> ao clicar no link abrirá o seu e-mail</li>
+        </ul>
+    </p>
+
+    <p>
+        O href também pode receber o atributo <b>target</b> que define em qual aba ou janela o link clicado aparecerá. Pode receber os seguintes valores:
+        <ul>
+            <li>target = "<b>_blank</b>" -- Abre o link em uma nova aba (guia)</li>
+            <li>target = "<b>_self</b>" -- Abre o link na aba (guia). Este é o padrão</li>
+        </ul>
+
+        <a href="https://htmlreference.io/element/a/" target="_blank">tetando blank</a>
+        <a href="https://htmlreference.io/element/a/" target="_parent">testando parent</a>
+    </p>
+</body>
+</html>
