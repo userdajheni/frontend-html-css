@@ -8,3 +8,4 @@ HTML significa HyperText Markup Language. Ele é usado no front-end e fornece a 
 * [HTML Tutorial for Beginners: HTML Crash Course](https://www.youtube.com/watch?v=qz0aGYrrlhU)
 * [Scaler - HTML Tutorial](https://www.scaler.com/topics/html/)
 * [Curso em vídeo: HTML ATUALIZADO!](https://www.youtube.com/watch?v=Ejkb_YpuHWs)
+* [Referencia de todas as tags](https://htmlreference.io/)
