@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos html</title>
+    <style>
+        table { text-align: center;}
+        tr { padding: 10px;}
+        th { padding: 10px;}
+        td { padding: 20px;}
+    </style>
+</head>
+<body>
+    <h1>O que é um elemento html?</h1>
+    <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final: </p>
+    <img src="imagens/elemento01.png" alt="elemento">
+
+    <br><hr><br>
+
+    <h2>Em html temos 113 elementos que podemos usar para criar uma página html, nesta seção temos alguns e os que não estiverem aqui estarão em outras seções como a seção textos: (UTILIZE SEM ASPAS)</h2>
+    <table border="1">
+        <tr>
+            <th>Contagem</th>
+            <th>Elemento</th>
+            <th>Descrição</th>
+            <th>Tipo</th>
+            <th>Exemplo</th>
+        </tr>
+        <!-- br -->
+        <tr>
+            <td>1</td>
+            <td><'br'></td>
+            <td>Define uma quebra de linha dentro de um texto.</td>
+            <td>Inline</td>
+            <td>Lorem, ipsum dolor. <br> Houve uma quebra neste texto.</td>
+        </tr>
+        <!-- hr -->
+        <tr>
+            <td>2</td>
+            <td><'hr'></td>
+            <td>Define uma quebra semântica entre blocos de texto. Muitas vezes é representado como uma régua horizontal</td>
+            <td>Self-closing</td>
+            <td>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+                <hr>
+            </td>
+        </tr>
+        <!-- pre -->
+        <tr>
+            <td>3</td>
+            <td><'pre'></td>
+            <td>O texto dentro desta tag é exibido em uma fonte de largura fixa (geralmente Courier) e preserva espaços e quebras de linha: </td>
+            <td>Block</td>
+            <td>
+                <pre>
+                    Para escrever este texto
+                    Eu não useu a tag br
+                    Apenas pulei linha normalmente.
+                </pre>
+            </td>
+        </tr>
+        <!-- b -->
+        <tr>
+            <td>4</td>
+            <td><'b'></td>
+            <td>Texto em negrito </td>
+            <td>Inline</td>
+            <td><b>Isto é um texto em negrito</b></td>
+        </tr>
+        <!-- strong -->
+        <tr>
+            <td>5</td>
+            <td><'strong'></td>
+            <td>Texto importante semânticamente</td>
+            <td>Inline</td>
+            <td><strong>Isto é um texto importante</strong></td>
+        </tr>
+        <!-- i -->
+        <tr>
+            <td>6</td>
+            <td><'i'></td>
+            <td>Texto em itálico </td>
+            <td>Inline</td>
+            <td><i>Isto é um texto em itálico</i></td>
+        </tr>
+        <!-- em -->
+        <tr>
+            <td>7</td>
+            <td><'em'></td>
+            <td>Texto enfatizado</td>
+            <td>Inline</td>
+            <td>Isto é um texto enfatizado semânticamente</td>
+        </tr>
+        <!-- mark -->
+        <tr>
+            <td>8</td>
+            <td><'mark'></td>
+            <td>Texto marcado</td>
+            <td>Inline</td>
+            <td>Escrito como um <mark>marca-texto</mark></td>
+        </tr>
+        <!-- small -->
+        <tr>
+            <td>9</td>
+            <td><'small'></td>
+            <td>Texto menor </td>
+            <td>inline</td>
+            <td>Texto normal <small>texto menor</small></td>
+        </tr>
+        <!-- del -->
+        <tr>
+            <td>10</td>
+            <td><'del'></td>
+            <td>Texto deletado</td>
+            <td>inline</td>
+            <td>Este texto foi <del>excluído</del></td>
+        </tr>
+        <!-- ins -->
+        <tr>
+            <td>11</td>
+            <td><'ins'></td>
+            <td>Texto inserido</td>
+            <td>inline</td>
+            <td>Este texto foi <ins>inserido</ins></td>
+        </tr>
+        <!-- sub -->
+        <tr>
+            <td>12</td>
+            <td><'sub'></td>
+            <td>texto subscrito</td>
+            <td>Inline</td>
+            <td>H<sub>2</sub>O</td>
+        </tr>
+        <!-- sup -->
+        <tr>
+            <td>13</td>
+            <td><'sup'></td>
+            <td>Texto sobrescrito</td>
+            <td>Inline</td>
+            <td>X<sup>2</sup></td>
+        </tr>
+        <!-- aside -->
+        <tr>
+            <td>14</td>
+            <td>< aside ></td>
+            <td>Define um bloco de conteúdo relacionado ao conteúdo principal. Geralmente exibido como uma barra lateral. </td>
+            <td>Block</td>
+            <td>
+                <aside>
+                    <h3>About the author</h3>
+                    <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>
+                </aside>
+            </td>
+        </tr>
+        <!-- audio  -->
+        <tr>
+            <td>14</td>
+            <td>< audio ></td>
+            <td>Permite incorporar um áudio em uma página da web</td>
+            <td>Block</td>
+            <td><audio src="audio/Hal.mp3" controls></audio></td>
+        </tr>
+        <!-- botão -->
+        <tr>
+            <td>15</td>
+            <td>< button ></td>
+            <td>Define um botão</td>
+            <td>Inline</td>
+            <td><button>Enviar</button></td>
+        </tr>
+        <!-- caption  -->
+        <tr>
+            <td>16</td>
+            <td>< caption ></td>
+            <td>Define uma legenda para uma tabela</td>
+            <td>Block</td>
+            <td>
+                <table border="1">
+                    <caption>The Beatles</caption>
+                    <tr>
+                      <td>John Lennon</td>
+                      <td>Rhythm Guitar</td>
+                    </tr>
+                    <tr>
+                        <td>Paul McCartney</td>
+                        <td>Bass</td>
+                      </tr>
+                      <tr>
+                </table>
+            </td>
+        </tr>
+        <!-- Code -->
+        <tr>
+            <td>17</td>
+            <td>< code ></td>
+            <td>Define um trecho de código dentro de um bloco de texto.</td>
+            <td>Inline</td>
+            <td>O método <code>push()</code> adiciona um ou mais elementos ao final de uma matriz e retorna o novo comprimento da matriz.</td>
+        </tr>
+        <!-- col -->
+        <tr>
+            <td>18</td>
+            <td>< col ></td>
+            <td>Define uma coluna dentro de uma tabela</td>
+            <td>Inline</td>
+            <td><table>
+                <colgroup>
+                  <col style="background-color: hotpink;">
+                  <col span="2" style="background-color: springgreen;">
+                </colgroup>
+                <tr>
+                  <td>John Lennon</td>
+                  <td>Rhythm Guitar</td>
+                  <td>1960–1969</td>
+                </tr>
+                <tr>
+                  <td>Paul McCartney</td>
+                  <td>Bass</td>
+                  <td>1960–1970</td>
+                </tr>
+                <tr>
+                  <td>George Harrison</td>
+                  <td>Lead Guitar</td>
+                  <td>1960–1970</td>
+                </tr>
+                <tr>
+                  <td>Ringo Starr</td>
+                  <td>Drums</td>
+                  <td>1960–1970</td>
+                </tr>
+              </table></td>
+        </tr>
+        <!-- colgroup  -->
+        <tr>
+            <td>19</td>
+            <td>< colgogroup ></td>
+            <td>Define um grupo de colunas dentro de uma tabela</td>
+            <td>Block</td>
+            <td>
+                <table>
+                    <colgroup>
+                      <col style="background-color: hotpink;">
+                      <col span="2" style="background-color: springgreen;">
+                    </colgroup>
+                    <tr>
+                      <td>John Lennon</td>
+                      <td>Rhythm Guitar</td>
+                      <td>1960–1969</td>
+                    </tr>
+                    <tr>
+                      <td>Paul McCartney</td>
+                      <td>Bass</td>
+                      <td>1960–1970</td>
+                    </tr>
+                    <tr>
+                      <td>George Harrison</td>
+                      <td>Lead Guitar</td>
+                      <td>1960–1970</td>
+                    </tr>
+                    <tr>
+                      <td>Ringo Starr</td>
+                      <td>Drums</td>
+                      <td>1960–1970</td>
+                    </tr>
+                  </table>
+            </td>
+        </tr>
+        <!-- data -->
+        <tr>
+            <td>20</td>
+            <td>< data ></td>
+            <td>Define o conteúdo vinculado à saída legível por máquina</td>
+            <td>Inline</td>
+            <td>
+                <p>Computers</p>
+                <ul>
+                <li>
+                    <data value="499">Mini PC</data>
+                </li>
+                <li>
+                    <data value="899">Small laptop</data>
+                </li>
+                <li>
+                    <data value="1399">Large laptop</data>
+                </li>
+                <li>
+                    <data value="2099">Desktop PC</data>
+                </li>
+                </ul>
+            </td>
+        </tr>
+        <!-- datalist  -->
+        <tr>
+            <td>21</td>
+            <td><'datalist'></td>
+            <td>Define uma lista de opções de preenchimento automático ao usar um texto <'input'></td>
+            <td>Block</td>
+            <td>
+                <label>South American countries</label><br>
+                <input list="countries" placeholder="Type a country">
+                <datalist id="countries">
+                    <option value="Argentina">
+                    <option value="Bolivia">
+                    <option value="Brazil">
+                    <option value="Chile">
+                    <option value="Colombia">
+                    <option value="Ecuador">
+                    <option value="Guyana">
+                    <option value="Paraguay">
+                    <option value="Peru">
+                    <option value="Suriname">
+                    <option value="Uruguay">
+                    <option value="Venezuela">
+                  </datalist>
+            </td>
+        </tr>
+        <!-- details -->
+        <tr>
+            <td>22</td>
+            <td><'details'></td>
+            <td>Define um bloco alternável de conteúdo com um resumo e detalhes adicionais</td>
+            <td>Block</td>
+            <td>
+                <details>
+                    <summary>Leia mais</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+                  </details>
+            </td>
+        </tr>
+        <!-- div -->
+        <tr>
+            <td>23</td>
+            <td><'div'></td>
+            <td>Define um bloco genérico de conteúdo, que não carrega nenhum valor semântico. Usado para elementos de layout como contêineres.
+            </td>
+            <td>Block</td>
+            <td>-</td>
+        </tr>
+        <!-- figcaption -->
+        <tr>
+            <td>24</td>
+            <td><'figcaption'></td>
+            <td>Define a legenda de um figure</td>
+            <td>Block</td>
+            <td><figure>
+                <img src="https://htmlreference.io/images/html-reference-logo.png" alt="HTML Reference logo" width="200px">
+                <figcaption>The HTML Reference logo</figcaption>
+              </figure></td>
+        </tr>
+        <!-- figure -->
+        <tr>
+            <td>25</td>
+            <td><'figure'></td>
+            <td>Block</td>
+            <td>Define um único elemento independente, geralmente uma imagem.</td>
+            <td>
+                <figure>
+                    <img src="https://htmlreference.io/images/html-reference-logo.png" alt="HTML Reference logo" width="200px">
+                </figure>
+            </td>
+        </tr>
+        <!-- footer -->
+        <tr>
+            <td>26</td>
+            <td><'footer'></td>
+            <td>Define o rodapé de uma página ou seção da web</td>
+            <td>Block</td>
+            <td>
+                <footer>
+                    HTML Reference - A free reference to all HTML5 elements and attributes
+                  </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
