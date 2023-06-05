@@ -9,6 +9,8 @@ HTML significa HyperText Markup Language. Ele é usado no front-end e fornece a 
 * [Scaler - HTML Tutorial](https://www.scaler.com/topics/html/)
 * [Curso em vídeo: HTML ATUALIZADO!](https://www.youtube.com/watch?v=Ejkb_YpuHWs)
 * [Referencia de todas as tags](https://htmlreference.io/)
+* [7 days of code](https://7daysofcode.io/matricula/html-css)
+* [Apostila Alura](https://www.alura.com.br/apostila-html-css-javascript)
 
 # CSS
 CSS ou Cascading Style Sheets é a linguagem usada para estilizar o frontend de qualquer site. CSS é uma tecnologia fundamental da World Wide Web, juntamente com HTML e JavaScript. 
