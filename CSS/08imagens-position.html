@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Position</title>
+    <!-- css -->
+    <style>
+        .box1, .box2 {
+            background-color: yellow;
+            width: 900px;
+            height: 700px;
+            background-image: url(imagens/imagem2.jpg), url(imagens/imagem1.jpg);
+        }
+
+        .box2 {
+            background-repeat: no-repeat, repeat-y;
+            background-position: top left, top right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Position</h1>
+
+    <p>
+        A propriedade background-position é usada para ajustar a posição da imagem em particular. Esta propriedade assume um valor, o valor é a posição da imagem no HTML, ou seja, Top, Down, Top-Left, etc. As imagens podem ser configuradas com esta posição. Por padrão, a posição da imagem não repetida é a posição superior esquerda na página HTML. <br>
+        <img src="imagens/img01.png" alt="">
+    </p>
+
+    <div class="box1"></div>
+    <br><br><br>
+    <div class="box2"></div>
+</body>
+</html>

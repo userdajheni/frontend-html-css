@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo de Tabela </title>
+    <!-- css -->
+    <style>
+        .table1 tr, th, td { padding: 10px;}
+
+        .table2 td, th {
+            border: 1px solid #777;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        table.table2 { border-collapse: collapse;}
+
+        .table2 tbody tr:nth-child(odd) {
+            background: #eee;
+        }
+
+        .table2 caption {
+            padding: 10px;
+            font-size: 0.8rem;
+        }
+
+        .table3 td, th {
+            border: 1px solid #777;
+        }
+
+        table.table3 {
+            border-spacing: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Significado de cada tag de tabela HTML </h1>
+    <table border="1" class="table1">
+        <tr>
+            <th>Elementos</th>
+            <th>Significado das tags</th>
+        </tr>
+        <tr>
+            <td>table</td>
+            <td>A tabela inteira em si </td>
+        </tr>
+        <tr>
+            <td>caption</td>
+            <td>A legenda/título da tabela </td>
+        </tr>
+        <tr>
+            <td>thead</td>
+            <td>O cabeçalho da tabela </td>
+        </tr>
+        <tr>
+            <td>tbody</td>
+            <td>O corpo da tabela que consiste nos dados principais </td>
+        </tr>
+        <tr>
+            <td>tfoot</td>
+            <td>O rodapé da tabela </td>
+        </tr>
+        <tr>
+            <td>tr</td>
+            <td>As linhas da tabela </td>
+        </tr>
+        <tr>
+            <td>td</td>
+            <td>A célula que contém os dados </td>
+        </tr>
+        <tr>
+            <td>th</td>
+            <td>Título</td>
+        </tr>
+    </table>
+    
+    <br><br><br>
+
+    <h2>Estilizando a tabela abaixo:</h2>
+    <table class="table2">
+        <caption>Aqui é título da tabela</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jheniffer</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Pedro Lucca</td>
+                <td>1 ano e 9 meses</td>
+            </tr>
+            <tr>
+                <td>Amanda</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="2">Todos os direitos reservados</td></tr>
+        </tfoot>
+    </table>
+
+    <br><br><br>
+
+    <h2>Borda da Tabela</h2>
+    <p>
+        <b>Border</b> são as linhas que distinguem cada célula da tabela. Por padrão, há um espaçamento entre as bordas de duas células de 2px. O <b>border-spacing</b> coloca espaçamento nas bordas, a tabela abaixo tem um espaçamento de 20px
+    </p>
+
+    <table class="table3">
+        <tr>
+            <th>Item 1</th>
+            <th>Item 2</th>
+            <th>Item 3</th>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>Morango</td>
+            <td>Uva</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2>Border-Collapse</h2>
+    <p>
+        Podemos mesclar as bordas de duas células adjacentes, ou seja, remover completamente o espaço entre as bordas adjacentes. Isso é algo mais comumente feito e, para isso, precisamos da propriedade border-collapse. Aplicamos esta propriedade ao <'table'> . Esta propriedade tem dois valores: separate e collapse. Separate é definido por padrão. 
+    </p>
+</body>
+</html>
