@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --shadow-color: 286deg 36% 56%;
+    --shadow-elevation-low:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+      0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+      1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+      0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+      2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+      5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+      1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+      2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+      4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+      7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+      11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+      17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+      25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+  }
+
+/* barra de navegação */
+header {
+    display: flex; /* coloca um do lado do outro */
+    flex-direction: row; /* deixa inline */
+    align-items: center;
+    padding: 25px;
+    justify-content: space-around; /* itens centralizados mas com espaços */
+}
+
+/* logo */
+.logo {
+    height: 35px;
+}
+
+/* links */
+nav {
+    gap: 30px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Sarala', sans-serif;
+    list-style: none; /* tira as bolinhas */
+}
+
+/* botão */
+.btn {
+    gap: 20px;
+    display: flex;
+}
+
+.btn-white, .btn-black {
+    height: 40px;
+    width: 105px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid #888888;
+    font-family: 'Righteous', cursive;
+}
+
+.btn-white { 
+    color: #000;
+    background-color: white;
+}
+
+.btn-black {
+    color: #fff;
+    background-color: black;
+}
+
+/* conteudo */
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto h1 {
+    font-size: 70px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.texto p {
+
+    color: #888888;
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.btn-texto {
+    width: 255px;
+    height: 75px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 20px 35px rgba(218, 205, 255, 0.3);
+    background: linear-gradient(90deg, #EFCDFF -1.57%, #D1F2FF 63.43%, #FBFFE5 100%);
+}
+
+.btn-texto:hover {
+    transition: 10s;
+}
+
+.imagem {
+    border-radius: 46% 18% 38% 25% / 61% 0% 54% 0%;
+    box-shadow: 21px 33px 44px 17px rgba(0,0,0,0.1);
+}
