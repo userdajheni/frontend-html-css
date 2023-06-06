@@ -31,3 +31,5 @@ CSS ou Cascading Style Sheets é a linguagem usada para estilizar o frontend de 
 * [Curso CSS Completo (7 Horas)](https://youtu.be/w1J6gY40yMo)
 * [Curso de HTML e CSS com projeto - HTML e CSS para iniciantes](https://youtu.be/PuyZAUyZYDI)
 * [Projeto Odin](https://www.theodinproject.com/dashboard)
+
+# Projetos
