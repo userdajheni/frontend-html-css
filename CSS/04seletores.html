@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <p>
+        CSS são a combinação de caracteres e símbolos especiais que instrui o navegador a aplicar propriedades CSS específicas ao elemento HTML desejado. Os seletores CSS usam o nome id (começa com #), nome da classe, tipo da tag HTML (como cabeçalho, div, etc.), atributo, etc. do elemento HTML para selecioná-los. O(s) elemento(s) HTML que é(são) selecionado(s) pelo seletor é(são) chamado(s) de assunto do seletor.
+    </p>
+
+    <h2>Seletores CSS Básicos</h2>
+    <ul>
+        <li>
+            <b>Seletor Universal</b>: 
+            <img src="imagens/seletor01.png" alt=""> <br>
+            Ele seleciona todos os elementos HTML presentes na página HTML. Para usar o seletor universal, precisamos usar asteriscos (*) e depois definir a propriedade CSS e depois disso, todos os elementos serão selecionados.
+        </li><br>
+
+        <li>
+            <b>Seletores de tipo:</b>
+            <img src="imagens/seletor02.png" alt=""><br>
+            Um seletor de tipo também é conhecido como seletor de elemento porque seleciona tag(s)/elemento(s) HTML em seu documento. O seletor de elementos seleciona elementos HTML com base em seus nomes, alguns deles são p (tag de parágrafo), h1 (título 1), div (tag de divisão), span, etc. Para usar um seletor de tipo, você só precisa dar o nome da tag HTML e, em seguida, definir as propriedades CSS entre chaves. 
+        </li><br>
+
+        <li>
+            <b>Seletor de classe:</b>
+            <img src="imagens/seletor03.png" alt="">
+            O seletor de classe em CSS seleciona elementos que pertencem a um determinado atributo de classe. Para selecionar elementos com uma classe específica, escreva um ponto ou ponto final (.) e, em seguida, o nome da classe. 
+        </li><br>
+
+        <li>
+            <b>Seletor de ID:</b>
+            <img src="imagens/seletor04.png" alt="">
+            O seletor de ID de CSS usa o atributo de ID do elemento HTML para selecionar elementos em uma página e aplicar propriedades CSS a eles. O atributo id é o identificador único em um documento HTML Para usar um seletor de ID em CSS, use uma hashtag (#) seguida do nome do ID do elemento HTML. O elemento HTML só será selecionado se seu atributo id corresponder exatamente ao valor informado no seletor. 
+        </li>
+    </ul>
+
+    <br><hr><br>
+
+    <h2>Seletores de Atributo</h2>
+    <p>
+        <b>Seletor [Attribute]</b>: Nesse tipo de seletor de atributo, o nome do elemento é usado e, em seguida, o nome do atributo é especificado entre colchetes. Os elementos que correspondem ao nome do atributo especificado no colchete são selecionados e as propriedades CSS são aplicadas a eles. 
+        <img src="imagens/seletor06.png" alt="">
+        <img src="imagens/seletor07.png" alt="">
+        <img src="imagens/seletor08.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <p>
+        Se você deseja aplicar uma propriedade CSS específica a diferentes elementos que contêm o mesmo atributo, nesse caso, especifique os diferentes elementos e separe-os por vírgula (,). 
+        <img src="imagens/seletor09.png" alt="">
+        <img src="imagens/seletor10.png" alt="">
+        <img src="imagens/seletor11.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <p>
+        <b>Seletor [atributo = “valor”]</b>: Neste tipo de seletor de atributo, todos os elementos HTML cujo atributo e valor do atributo (Valor do atributo é a string dos caracteres que são atribuídos ao atributo do elemento HTML. Mencionado entre aspas duplas “ ”) corresponde exatamente ao os valores especificados no seletor são selecionados e as propriedades CSS especificadas são aplicadas. <br>
+        <img src="imagens/seletor12.png" alt="">
+        <img src="imagens/seletor13.png" alt="">
+        <img src="imagens/seletor14.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <p>
+        <b>Seletor [attr~=value]</b>: Usando este tipo de seleção de atributo também, selecionamos elementos HTML com base no atributo e seus valores. Nesse caso, o elemento será selecionado mesmo que o valor mencionado no seletor corresponda a qualquer valor (já que eles podem ser uma lista de palavras) no atributo do elemento. <br>
+        <img src="imagens/seletor15.png" alt="">
+        <img src="imagens/seletor16.png" alt="">
+        <img src="imagens/seletor17.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <p>
+        <b>Seletor [atributo|=valor]</b>: Este seletor de atributo é usado para selecionar todos os elementos HTML cujo atributo tem um valor de uma lista de palavras separadas por hífen, o elemento será selecionado se o início de uma lista de palavras separadas por hífen nos valores de atributo corresponder ao valor especificado em o seletor. O valor do atributo pode ser uma palavra inteira exata sozinha ou deve começar com o valor imediatamente seguido por um hífen. (-) <br>
+        <img src="imagens/seletor18.png" alt="">
+        <img src="imagens/seletor19.png" alt="">
+        <img src="imagens/seletor20.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <p>
+        <b>Seletor [attributo ^= "valor"]</b>: Neste seletor o valor não precisa ser separado por hífen ou espaço, o valor do atributo só precisa começar com o valor especificado no seletor. No exemplo abaixo o estilo será aplicado apenas nas classes que começam com <b>colored</b>. <br>
+        <img src="imagens/seletor21.png" alt="">
+        <img src="imagens/seletor22.png" alt="">
+        <img src="imagens/seletor23.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <p>
+        <b>Seletor [attribute$="value"]</b>: Neste seletor selecionamos elementor que contenham atributos com valor final especificado. No exemplo abaixo receberá estilo apenas os elementos que possuem atributos que possuem algum valor com final "end". <br>
+        <img src="imagens/seletor24.png" alt="">
+        <img src="imagens/seletor25.png" alt="">
+        <img src="imagens/seletor26.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <p>
+        <b>Seletor [atributo *= "valor"]</b>: Neste tipo de seletor de atributo, podemos selecionar elementos cujo valor do atributo coincida com o valor especificado no seletor e o valor pode estar presente em qualquer lugar (se houver uma lista de palavras no valor). No exemplo abaixo selecionaremos elementos que possuam atributos com valor "line", independente da posição: inicio, fim, meio, separado por espaço, traço etc: <br>
+        <img src="imagens/seletor27.png" alt="">
+        <img src="imagens/seletor28.png" alt="">
+        <img src="imagens/seletor29.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <h2>Combinadores de CSS</h2>
+    <p>
+        Seletor descendente (espaço), Seletor geral de irmãos (~), Seletor de irmão adjectivo (+) e Seletor filho (>).
+    </p>
+
+    <p>
+        <b>Seletor descendente (espaço)</b>: seleciona todos os elementos HTML que são descendentes de um elemento ancestral especificado. No exemplo a seguir, todo elemento <b>p</b> que estiver sob um elemento <b>div</b> receberá estilização. 
+        <img src="imagens/seletor30.png" alt="">
+        <img src="imagens/seletor31.png" alt="">
+        <img src="imagens/seletor32.png" alt="">
+    </p>
+
+    <br><hr><br>
+
+    <h2>Pseudo Classes</h2>
+    <h3>1 - Hover</h3>
+    <p>
+        Esta pseudo-classe adiciona um efeito especial ao elemento selecionado quando você aponta o cursor do mouse sobre ele, o que pode tornar o elemento interativo. 
+    </p>
+    <img src="imagens/seletor33.png" alt="">
+
+    <br><br>
+
+    <h3>2 - first-child</h3>
+    <p>O elemento especificado sempre será selecionado somente quando for o primeiro filho de qualquer elmento.</p>
+</body>
+</html>
