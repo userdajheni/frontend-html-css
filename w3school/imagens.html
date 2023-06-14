@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <p>
+        As imagens podem melhorar o design e a aparência de uma página da web. A tag <b>img</b> é usada para incorporar uma imagem. O atributo <b>src</b> especifica o caminho para a imagem e o atributo <b>alt</b> especifica um texto alternativo para a imagem.
+
+        <pre>
+            < img src="img_chania.jpg" alt="Flowers in Chania" > 
+        </pre>
+    </p>
+
+    <picture>
+        <img src="img/butterfly.jpg" alt="Borboleta">
+    </picture>
+
+    <picture>
+        <img src="img/cat_box.png" alt="Gato na caixa">
+    </picture>
+
+    <picture>
+        <img src="img/giraffes.jpg" alt="Girafa">
+    </picture>
+
+    <br><hr><br>
+
+    <h2>Image Maps</h2>
+    <p>Com mapas de imagem você pode criar áreas clicáveis ​​em uma imagem.</p>
+    <p>
+        A tag <b>map</b> define um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicáveis. As áreas são definidas com um ou mais tags <b>area</b>. Na imagem abaixo clique no computador, depois no celular e depois na xícara de café:
+    </p>
+
+    <div>
+        <img src="img/workplace.jpg" alt="workplace" usemap="#workmap">
+
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" href="https://www.w3schools.com/html/computer.htm" alt="Computador" target="_blank">
+            <area shape="rect" coords="290,172,333,250" href="https://www.w3schools.com/html/phone.htm" alt="Celular" target="_blank">
+            <area shape="circle" coords="337,300,44" href="https://www.w3schools.com/html/coffee.htm" alt="Xícara" target="_blank">
+        </map>
+    </div>
+
+    <p>
+        A ideia por trás de um <b>mapa de imagem</b> é que você deve ser capaz de realizar diferentes ações dependendo de onde você clicar na imagem. Uma área clicavél é definida pela tag <b>area</b> e você pode escolher as seguintes formas:
+        <ul>
+            <li><b>rect</b>- define uma região retangular</li>
+            <li><b>circle</b>- define uma região circular </li>
+            <li><b>poly</b>- define uma região poligonal </li>
+            <li><b>default</b>- define toda a região </li>
+        </ul>
+
+        Testando outra imagem. Clique na caixa, depois na cabeça do gato e depois em qualquer parte superior:
+    </p>
+
+    <div>
+        <img src="img/cat_box.png" alt="Gato na caixa" usemap="#catmap">
+        <map name="catmap">
+            <area target="_blank" alt="Box" title="Box" href="w3school" coords="67,359,582,579" shape="rect">
+            <area target="_blank" alt="Cat" title="Cat" href="youtube.com" coords="301,243,115" shape="circle">
+            <area target="_blank" alt="Teste poly" title="Teste poly" href="w3school" coords="0,0,406,0,0,32,4,124,639,0,639,216,639,264,629,300,301,23" shape="poly">
+        </map>
+    </div>
+
+    <h3>
+        <a href="https://www.image-map.net/">Gerador: código da área do mapa</a>
+    </h3>
+</body>
+</html>
