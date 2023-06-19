@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        th, td { border: 1px solid black;}
+        table { border: none;}
+
+        .t2 {
+            border-collapse: collapse;
+        }
+
+        .t3 table, .t3 th, .t3 td {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        .t3 th, .t3 td {
+            background-color: #96D4D4;
+        }
+
+        /* border radius */
+        .t4 table, .t4 th, .t4 td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .t5 th, .t5 td {
+            border: 2px red;
+            border-style: dotted;
+        }
+
+        .t6 th, .t6 td {
+            border: 2px rebeccapurple;
+            border-style: dashed;
+        }
+
+        .t7 th, .t7 td {
+            border: 2px rgb(153, 51, 87);
+            border-style: double;
+        }
+
+        .t8 th, .t8 td {
+            border: 3px rgb(51, 153, 124);
+            border-style: groove;
+        }
+
+        .t9 th, .t9 td {
+            border: 3px rgb(243, 84, 21);
+            border-style: ridge;
+        }
+
+        .t10 th, .t10 td {
+            border: 3px rgb(169, 243, 21);
+            border-style: inset;
+        }
+
+        .t11 th, .t11 td {
+            border: 3px rgb(21, 243, 199);
+            border-style: outset;
+        }
+
+        .t12 th, .t12 td {
+            border-style: none;
+        }
+
+        .t13 th, .t13 td {
+            border-style: hidden;
+        }
+
+        .t14 tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        .t15 td:nth-child(even), .t15 th:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        .t16 tr:nth-child(even) {
+            background-color: rgba(115, 7, 217, 0.4);
+        }
+
+        .t16 th:nth-child(even), .t16 td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.992);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela com borda normal</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t2">
+        <caption>Tabela com borda collapse</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t3">
+        <caption>Tabela com background</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t4">
+        <caption>Tabela com border-radius</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t5">
+        <caption>Tabela com border-style: dotted</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t6">
+        <caption>Tabela com border-style: dashed</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table>
+        <caption>Tabela com border-style: solid</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+    <table class="t7">
+        <caption>Tabela com border-style: double</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t8">
+        <caption>Tabela com border-style: groove</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t9">
+        <caption>Tabela com border-style: ridge</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t10">
+        <caption>Tabela com border-style: inset</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t11">
+        <caption>Tabela com border-style: outset</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t12">
+        <caption>Tabela com border-style: none</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <table class="t13">
+        <caption>Tabela com border-style: hidden</caption>
+        <!-- cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Função</th>
+                <th>Aleatório</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>Forma a tabela</td>
+                <td><'table'></td>
+            </tr>
+
+            <tr>
+                <td>tr</td>
+                <td>Forma a linha da tabela</td>
+                <td><'tr'></td>
+            </tr>
+
+            <tr>
+                <td>th</td>
+                <td>É uma célula mas de título. Negrito</td>
+                <td><'td'></td>
+            </tr>
+
+            <tr>
+                <td>td</td>
+                <td>Célula normal, texto normal</td>
+                <td><'td'></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <h2>Table Size</h2>
+    <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table> 
+
+      <br><br>
+
+      <table style="width:100%">
+        <tr>
+          <th style="width:70%">Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table> 
+
+      <br><br>
+
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr style="height:200px">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table> 
+
+      <br><hr><br>
+
+      <h2>Colspan e Rowspan</h2>
+      <table style="width:100%">
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>57</td>
+        </tr>
+      </table> 
+
+      <br><br>
+
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table> 
+
+      <br><hr><br>
+
+      <table style="width:100%" class="t14">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+      </table>
+
+      <br><hr><br>
+
+      <table style="width:100%" class="t15">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+      </table>
+
+      <br><hr><br>
+
+      <table style="width:100%" class="t16">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+      </table>
+</table> 
+</body>
+</html>
