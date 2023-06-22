@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head</title>
+</head>
+<body>
+    <h1>Head</h1>
+    <p>
+        O elemento <b>head</b> é o cabeçalho do seu arquivo html e seu conteúdo não é visivel para o usuário. Ele é um contêiner para os seguintes elementos: title, style, meta, link, scrip e base.
+    </p>
+
+    <h2>Title</h2>
+    <p>
+        Este elemento define o título do documento. O título deve ser somente texto e é mostrado na barra de título do navegador ou em guia da página. É necessário em um arquivo html. O conteúdo do título de uma página é muito importante para a otimização do mecanismo de pesquisa (SEO)! O título da página é usado pelos algoritmos do mecanismo de pesquisa para decidir a ordem ao listar páginas nos resultados da pesquisa. 
+    </p>
+
+    <br><hr><br>
+
+    <h2>Style</h2>
+    <p>
+        Este elemento é usado para definir informações de estilo para um única página HTML. Por exemplo:
+        <pre>
+            <code>
+                <b>
+                < style >
+                    body {background-color: powderblue;}
+                    h1 {color: red;}
+                    p {color: blue;}
+                  < /style >
+                </b> 
+            </code>
+        </pre>
+    </p>
+
+    <br><hr><br>
+
+    <h2>Link</h2>
+    <p>
+        Este elemento define o relacionamento entre o documento atual e um recurso externo. A tag é usada com mais frequência para vincular a folhas de estilo externas, por exemplo:
+        <pre>
+            <code>
+                <b>< link rel="stylesheet" href="mystyle.css" > </b>
+            </code>
+        </pre>
+    </p>
+
+    <br><hr><br>
+
+    <h2>Meta</h2>
+    <p>
+        Este elemento é normalmente usado para especificar o conjunto de caracteres, descrição da página, palavras-chave, autor do documento, e configurações da janela de visualização. Os metadados não serão exibidos na página, mas são usados ​​pelos navegadores (como exibir o conteúdo ou recarregar a página), por mecanismos de pesquisa (palavras-chave) e outros serviços da web. 
+
+        <ul>
+            <li>
+                Definir conjunto de caracteres:
+                <pre><code><b>< meta charset="UTF-8" ></b></code></pre>
+            </li> <br>
+            <li>
+                Definir palavras-chave para motores de busca: (TÉCNICA SEO)
+                <pre><code><b>< meta name="keywords" content="HTML, CSS, JavaScript" ></b></code></pre>
+            </li> <br>
+            <li>
+                Defina uma descrição da sua página da web: 
+                <pre><code><b>< meta name="description" content="Free Web tutorials" ></b></code></pre>
+            </li>
+            <li>
+                Defina o autor de uma página: 
+                <pre><code><b>< meta name="author" content="John Doe" ></b></code></pre>
+            </li> <br>
+            <li>
+                Atualize o documento a cada 30 segundos:
+                <pre><code><b>< meta http-equiv="refresh" content="30" ></b></code></pre> 
+            </li> <br>
+            <li>
+                Configurando a janela de visualização para que seu site tenha uma boa aparência em todos os dispositivos: 
+                <pre><code><b>< meta name="viewport" content="width=device-width, initial-scale=1.0" ></b></code></pre>
+            </li>
+        </ul>
+
+        Exemplo de todas as tags juntas:
+        <pre>
+            <code>
+                <b>
+                    < head >
+                        < meta charset="UTF-8">
+                        < meta name="description" content="Free Web tutorials">
+                        < meta name="keywords" content="HTML, CSS, JavaScript">
+                        < meta name="author" content="John Doe">
+                    < /head >
+                </b>
+            </code>
+        </pre>
+    </p>
+</body>
+</html>
