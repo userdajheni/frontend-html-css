@@ -1,5 +1,0 @@
-Link da video aula: https://youtu.be/llF6vD-RljE
-
-Neste video Rafaella Ballerini ensina a criar uma lading page com HTML e CSS
-
-Sobre Flex Box: https://104.149.138.215/snippets/css/a-guide-to-flexbox/?__cpo=aHR0cHM6Ly9jc3MtdHJpY2tzLmNvbQ
