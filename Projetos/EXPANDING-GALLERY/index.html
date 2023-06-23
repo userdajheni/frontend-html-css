@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Galeria animada com html, css e javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Animada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- imagem 1 verão -->
+        <img src="img/summer.jpg" alt="verão" class="ativo">
+
+        <!-- imagem 2 outono-->
+        <img src="img/outono.jpg" alt="Outono" onmouseover="remover()">
+
+        <!-- imagem 3 Inverno -->
+        <img src="img/inverno.jpg" alt="Inverno" onmouseover="remover()">
+
+        <!-- imagem 4 Primavera -->  
+        <img src="img/primavera.jpg" alt="Primavera" onmouseover="remover()">
+    </div>
+
+    <script>
+        // <!-- remover class ativo quando passar o mouse em outras imagens -->
+        function remover() {
+            let imagemVerao = document.querySelector(".ativo")
+            imagemVerao.classList.remove("ativo")
+        }
+    </script>
+</body>
+</html>
