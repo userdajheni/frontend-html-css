@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio html</title>
+</head>
+<body>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzi audios em html</p>
+
+    <audio src="media/happy-mistake.mp3" autoplay controls></audio>
+
+    <audio preload="metadata" controls loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <p>Infelismente seu navegador não consegue reproduzir audio.</p>
+        <a href="media/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+
+    <!-- Não funciona -->
+    <audio preload="metadata" controls loop>
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <p>Infelismente seu navegador não consegue reproduzir audio.</p>
+        <a href="media/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+</body>
+</html>
