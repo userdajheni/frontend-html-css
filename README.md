@@ -33,9 +33,3 @@ CSS ou Cascading Style Sheets é a linguagem usada para estilizar o frontend de 
 * [Projeto Odin](https://www.theodinproject.com/dashboard)
 
 # Projetos
-* [Mobile First](https://userdajheni.github.io/html-css/Projetos/7DaysOfCode_MobileFirst)
-* [Galeria de imagem que expande](https://userdajheni.github.io/html-css/Projetos/EXPANDING-GALLERY/)
-* [7 dias de código html](https://userdajheni.github.io/html-css/Projetos/7daysOfCode/)
-* [Lading Page](https://userdajheni.github.io/html-css/Projetos/LANDINGPAGE-InomKhalilov/)
-* [Lading Page Bot Ballerini](https://userdajheni.github.io/html-css/Projetos/LANDINGPAGE/)
-* [Formulário Ballerini](https://userdajheni.github.io/html-css/Projetos/FORMULARIOS-BALLERINI/)
