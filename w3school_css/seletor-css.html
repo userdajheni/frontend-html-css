@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Css</title>
+</head>
+<body>
+    <h1>Seletor Css</h1>
+    <p>
+        Um seletor CSS seleciona o(s) elemento(s) HTML que você quer estilizar. Eles são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você quer estilizar. Podemos dividir os seletores CSS em cinco categorias:
+    </p>
+
+    <h2>1. Seletores simples</h2>
+    <p>
+        Seleciona elementos com base no nome do elemento, id ou classe. No exemplo a seguir, todos os elementos < p > da página serão alinhado ao centro, com uma cor de texto vermelha: 
+        <pre>
+            <code>
+                p {
+                    text-align: center;
+                    color: red;
+                  }
+            </code>
+        </pre>
+
+        O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico. O id de um elemento é único dentro de uma página, não podemos usar o mesmo id para vários elementos. Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido de o id do elemento:
+        <pre>
+            <code>
+                #paragrafoPrincipal {
+                    text-align: center;
+                    color: red;
+                  }
+            </code>
+        </pre>
+
+        O seletor de classe seleciona elementos HTML com um atributo de classe específico. Para selecionar elementos com uma classe específica, escreva um caractere de ponto (.), seguido do nome da classe. 
+        <pre>
+            <code>
+                .center {
+                    text-align: center;
+                    color: blue;
+                  }
+                   <br>
+                  
+                   Neste exemplo, apenas os elementos < p > com class="center" serão vermelho e alinhado ao centro: 
+                   
+                    p.center {
+                        text-align: center;
+                        color: red;
+                    }
+            </code>
+        </pre>
+    </p>
+
+    <h2>2. Seletores de combinação</h2>
+    <section>
+        Seleciona elementos com base em uma relação específica entre eles. Existem quatro combinadores diferentes em CSS: 
+        <h3>seletor descendente (espaço)</h3>
+        <p>
+            O seletor descendente corresponde a todos os elementos que são descendentes de um determinado elemento. O exemplo a seguir seleciona todos os elementos p que estão dentro dos elementos div:
+            <pre>
+                <code>
+                    div p {
+                        background-color: yellow;
+                      }
+                </code>
+            </pre>
+        </p>
+
+        <h3>seletor filho (>)</h3>
+        <p>
+            
+        </p>
+
+        <h3>seletor de irmão adjacente (+)</h3>
+
+        <h3>seletor geral de irmãos (~)</h3>
+    </section>
+
+    <h2>3. Seletores de pseudoclasse</h2>
+    <p>
+        Seleciona elementos com base em um determinado estado.
+    </p>
+
+    <h2>4. Seletores de pseudo-elementos</h2>
+    <p>
+        Seleciona e estiliza uma parte de um elemento.
+    </p>
+
+    <h2>5. Seletores de atributos</h2>
+    <p>
+        Seleciona elementos com base em um atributo ou valor de atributo.
+    </p>
+</body>
+</html>
