@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+header > img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(70, 70, 70, 1);
+}
+
+header span {
+    font-weight: 400;
+    color: rgba(163, 163, 163, 1);
+}
+
+/* consultas */
+.box {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(236, 236, 236, 1)
+}
+
+.boxHeader {
+    display: flex;
+}
+
+.boxHeader img {
+    width: 60px;
+    padding-left: 16px;
+    border-radius: 50%;
+}
+
+.boxName h3{
+    font-size: 14px;
+    color: rgba(70, 70, 70, 1);
+
+}
+
+.boxName span { color: rgba(163, 163, 163, 1); }
+
+img.iconChat {
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+hr {
+    background: rgba(70, 70, 70, 0.252);
+}
+
+.box p {
+    font-size: 14px; 
+    font-weight: 500; 
+    color: #464646; 
+    padding: 10px 0;
+}
+
+.boxButton {
+    display: flex;
+    justify-content: center;
+}
+
+.boxButton button {
+    width: 139px;
+    height: 48px; 
+    border: none;
+    font-size: 14px; 
+    font-weight: 500;   
+    border-radius: 8px; 
+}
+
+button.btn1 { 
+    color: #fff;
+    background: #FFB050;
+    box-shadow: 0px 4px 16px 0px rgba(255, 176, 80, 0.16);
+}
+
+button.btn2 {
+    background-color: #fff;
+    border: 1px solid #ECECEC;
+}
+
+button.btn3 {
+    color: #fff;
+    width: 296px; 
+    background: #4894FF; 
+    box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+}
