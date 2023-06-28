@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 12px 18px;
+}
+
+section {
+    /* background-color:cornflowerblue; */
+}
+
+/* cabeçalho */
+header, main {
+    background: rgba(255, 165, 2, 0.50);
+}
+
+.nav-menu {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-menu ul {
+    gap: 30px;
+    display: flex;
+}
+
+.nav-menu li {
+    color: #373F41;
+    font-size: 14px; 
+    font-weight: 600;
+    cursor: pointer; 
+    letter-spacing: 0.2px; 
+    list-style-type: none;
+}
+
+li.nav-item-ativo {
+    color: #3C64B1;
+}
+
+.btn-menu {
+    gap: 10px;
+    display: flex;
+}
+
+.btn-menu button {
+    border-radius: 6px; 
+}
+
+.btn-menu button:nth-child(1) {
+    color: #3C64B1;
+    background-color: #3c65b100;
+}
+
+.btn-menu button:nth-child(2) {
+    color: #fff;
+    background-color: #F73C6B;
+}
+
+/* conteúdo principal */
+main {
+    display: flex;
+    height: 640px;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-texto {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: justify; 
+}
+
+.main-texto h1 {
+    color: #373F41;
+    font-size: 52px;
+    font-weight: 700; 
+    letter-spacing: 0.2px; 
+}
+
+.main-texto p {
+    color: #737B7D;
+    font-size: 16px; 
+    letter-spacing: 0.3px; 
+}
+
+.main-texto button {
+    width: 110px;
+    color: #F73C6B; 
+    background-color: #f73c6b00;
+    border: 1px solid #F73C6B;
+}
+
+/* blocos de informação */
+.infoBox { 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.infoBox-item {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoBox-item p {
+    width: 588px; 
+    padding: 25px;
+    color: #282828;
+    font-size: 16px; 
+    border-radius: 15px; 
+    box-shadow: 0px 12px 35px 4px rgba(0, 0, 0, 0.05);
+}
+
+.infoBox-item p:nth-child(1) {
+    color: #fff;
+    background: #4F55DD; 
+}
+
+.infoBox img {
+    bottom: 40px;
+    position: relative;
+}
+
+/* banner verde */
+.bannerGreen {
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around; 
+    background: rgba(46, 213, 115, 0.50);
+}
+
+.bannerGreen div {
+    width: 471px;
+}
+
+.bannerGreen h2 {
+    font-size: 44px; 
+    color: #4F4F4F; 
+    font-weight: 700; 
+    letter-spacing: 0.2px; 
+}
+
+/* blocos de informações sobre compra */
+.infoBoxPay {
+    gap: 90px;
+    display: grid;
+    padding: 100px 160px;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.item-col { grid-column: 4; }
+
+.infoBoxPay-item { width: 255px; }
+
+.infoBoxPay-item p {
+    color: #282828; 
+    font-size: 16px; 
+    line-height: 22px; 
+    padding-top: 12px;
+    text-align: justify;
+    letter-spacing: 0.3px; 
+}
+
+.infoBoxPay img:nth-child(2) {
+    top: 955px;
+    position: absolute;
+}
+
+/* bloco de informação 2 */
+.infoBox-two {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infoBox-two-item {
+    gap: 30px;
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoBox-two-item h3 {
+    color: #373F41;
+    font-size: 23px; 
+    font-weight: 700; 
+    letter-spacing: 0.2px; 
+}
+
+.infoBox-two-item h2 {
+    color: #373F41;
+    font-size: 52px; 
+    font-weight: 700; 
+    letter-spacing: 0.2px; 
+}
+
+.infoBox-two-item p {
+    color: #737B7D;
+    font-size: 16px; 
+    text-align: justify; 
+    letter-spacing: 0.3px; 
+}
+
+/* banner rosa */
+.bannerPink {
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 160px;
+    align-content: center;
+    justify-content: space-around; 
+    background: rgba(255, 71, 87, 0.50);
+}
+
+.bannerPink-item { width: 600px; }
+
+.bannerPink-item h2 {
+    font-weight: 700; 
+    font-size: 37px; 
+    color: #4F4F4F; 
+    letter-spacing: 0.2px; 
+}
+
+.bannerPink-item form { 
+    gap: 25px;
+    display: flex;
+    padding-top: 35px; 
+}
+
+.bannerPink-item input {
+    width: 282px;
+    height: 42px; 
+    border: none;
+    border-radius: 11px;
+}
+
+.bannerPink-item input::placeholder {
+    color: #737B7D;
+    font-size: 14px;
+    padding: 10px;
+    letter-spacing: 0.2px; 
+}
+
+.bannerPink-item button {
+    color: #fff;
+    border-radius: 12px;
+    background: #F73C6B; 
+}
+
+.bannerPink img {
+    right: 100px;
+    bottom: 75px;
+    position: relative;
+}
+
+/* cards de informações */
+.infoBoxCards {
+    padding-bottom: 100px;
+}
+
+.cardHeader {
+    display: flex;
+    padding: 100px 0;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.cardHeader h2 {
+    color: #23242A;
+    font-size: 52px;
+    font-weight: 700; 
+    letter-spacing: -2.34px; 
+}
+
+.cardHeader > div {
+    gap: 40px;
+    display: flex;
+    align-content: center;
+}
+
+.cardHeader a {
+    font-size: 21px; 
+    font-weight: 600; 
+    color: #E5E5E5; 
+    letter-spacing: -0.21px;
+}
+
+.cards {
+    gap: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 460px);
+}
+
+.cards01, .cards02, .cards03 {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.10);
+    /* flexbox */
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards01-item, .cards02-item, .cards03-item {
+    padding: 40px;
+}
+
+.cards01-item h2, .cards02-item h2, .cards03-item h2 {
+    color: #23242A;
+    font-size: 44px; 
+    font-weight: 600; 
+    letter-spacing: -1.32px; 
+}
+
+.cards01-item p, .cards02-item p,.cards03-item p {
+    color: #23242A;
+    font-size: 16px; 
+    padding: 40px 0;
+    letter-spacing: -0.32px; 
+}
+
+.cards01 button, .cards02 button, .cards03 button {
+    color: #000;
+    height: 69.036px; 
+    font-size: 21px; 
+    border-radius: 0px 0px 12px 12px; 
+}
+
+.cards01 button {
+    background: #FFD281; 
+    box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.10);
+}
+
+.cards02 button {
+    background: rgba(46, 213, 115, 0.50);  
+    box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.10);
+}
+
+.cards03 button {
+    background: #FFA3AB; 
+    box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.10);
+}
+
+/* rodape */
+footer {
+    display: flex;
+    padding: 50px 100px;
+    flex-direction: column;
+    background: rgba(46, 213, 115, 0.50);
+}
+
+.footerHeader {
+    gap: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1{
+    width: 445px;
+}
+
+.footerItem img, .footerItem h3 {
+    padding-bottom: 40px;
+}
+
+.footerItem h3 {
+    color: #555; 
+    font-size: 18px; 
+    font-weight: 600; 
+    letter-spacing: -0.18px; 
+}
+
+.footerItem p {
+    color: #454646;
+    text-align: justify;
+    font-size: 16px; 
+    letter-spacing: 0.3px; 
+}
+
+.footerItem ul li {
+    color: #555;
+    font-size: 16px; 
+    padding: 5px 0; 
+    list-style-type: none;
+    letter-spacing: -0.16px; 
+}
+
+/* links */
+.footerLinks ul {
+    gap: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerLinks li {
+    color: #000;
+    font-size: 16px; 
+    font-weight: 700; 
+    list-style-type: none;
+}
+
+hr {
+    height: 1.4px;
+    border: none;
+    margin: 20px 0;
+    background-color: #000;
+}
+.cardsPay {
+    gap: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    color: #494949;
+    font-size: 18px; 
+    padding: 70px 80px 0 80px;
+    letter-spacing: -0.18px; 
+    justify-content: space-between;
+}
+
+/* posicionamento dos doodle */
+img.doodle1, img.doodle2, img.doodle3, img.doodle4, img.doodle5, img.doodle6 {
+    position: absolute;
+}
+
+img.doodle6 {
+    left: 1700px;
+    top: 4100px;
+}
+
+img.doodle5 {
+    top: 4000px;
+}
+
+img.doodle4 {
+    left: 1700px;
+    top: 3660px;
+}
+
+img.doodle3 {
+    left: 1650px;
+    top: 2000px;
+}
+
+img.doodle2 {
+    left: 0px;
+    top: 1200px;
+}
+
+img.doodle1 {
+    left: 0px;
+    top: 700px;
+}
