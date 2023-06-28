@@ -36,3 +36,4 @@ CSS ou Cascading Style Sheets é a linguagem usada para estilizar o frontend de 
 |Veja o meu projeto|Créditos|Faça você também|
 | --- | --- | --- |
 | [Formulário](https://userdajheni.github.io/html-css/Projetos/balle_form/) | Por: Ballerini | [Vídeo do projeto](https://youtu.be/wwqOJ2o84S4) |
+| [LandingPage - Figma](https://userdajheni.github.io/html-css/Projetos/balle_form/) | Por: [sourav aich](https://www.figma.com/@aich) | [Link do projeto](https://www.figma.com/community/file/1036531916904474141/Agency-landing-page)
