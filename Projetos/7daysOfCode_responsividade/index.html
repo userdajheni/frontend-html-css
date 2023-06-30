@@ -1,302 +1,311 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2e32b4be34.js"></script>
 </head>
 <body>
-    <!-- perfil -->
-    <header>
-        <img src="imagens/doutora.jpg" alt="doutora">
-        <div>
-            <h1>Olá, Sônia</h1>
-            <span>Mais 4 consultas hoje</span>
-        </div>
-    </header>
-
-    <!-- lista hoje -->
-    <section>
-        <h2>Hoje</h2>
-        <!-- consulta remota -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/lucianaDias.jpg" alt="Luciana Dias">
+    <!-- foto de perfil e nome -->
+    <div class="row">
+        <div class="col-12">
+            <header>
+                <!-- foto de perfil -->
+                <img src="imagens/doutora.jpg" alt="Doutora">
                 <!-- nome -->
-                <div class="boxName">
-                    <h3>Luciana Dias</h3>
-                    <span>
-                        <i class="fa-solid fa-video"></i>
-                        Consulta remota
-                    </span>
+                <div class="header">
+                    <h1>Olá, Sônia</h1>
+                    <span>Mais 4 consultas hoje</span>
                 </div>
-               <!-- icon -->
-               <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
-
-            <hr>
-            <p>14:00 - 15:00 (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn1">Ligar por vídeo</button>
-                <button class="btn2">Ligar por áudio</button>
-            </div>
+            </header>
         </div>
+    </div>
 
-        <!-- consulta no local -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/larissaSantana.jpg" alt="Larissa Santana">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Larissa Santana</h3>
-                    <span>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Consulta no local
-                    </span>
+    <!-- consultas de hoje -->
+    <div class="row">
+        <div class="col-12">
+            <section>
+                <h2>Hoje</h2>
+                <!-- conculta remota -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/lucianaDias.jpg" alt="Luciana Dias">
+                        <div class="box_header_nome">
+                            <h2>Luciana Dias</h2>
+                            <span>
+                                <i class="fa-solid fa-video"></i>
+                                Consulta remota
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>14:00 - 15:00 (1 hora)</span>
+                        <div>
+                            <button class="btn_primary">Ligar por vídeo</button>
+                            <button class="btn_disable">Ligar por vídeo</button>
+                        </div>
+                    </div>
                 </div>
-               <!-- icon -->
-               <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
 
-            <hr>
-            <p>16:00 - 17:00 - (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn3">Ver endereço</button>
-            </div>
+                <!-- consulta presencial -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/larissaSantana.jpg" alt="Larissa Santana">
+                        <div class="box_header_nome">
+                            <h2>Larissa Santana</h2>
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Consulta no local
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>16:00 - 17:00 - (1 hora)</span>
+                        <button class="btn">Ver endereço</button>
+                    </div>
+                </div>
+
+                <!-- conculta remota -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/marcosFerreira.jpg" alt="Marcos Correia">
+                        <div class="box_header_nome">
+                            <h2>Marcos Correia</h2>
+                            <span>
+                                <i class="fa-solid fa-video"></i>
+                                Consulta remota
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>17:20 - 18:00 (40 minutos)</span>
+                        <div>
+                            <button class="btn_primary">Ligar por vídeo</button>
+                            <button class="btn_disable">Ligar por vídeo</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+    </div>
+
+    <!-- consultas de amanhã -->
+    <div class="row">
+        <div class="col-12">
+            <section>
+                <h2>Amanhã</h2>
+                <!-- consulta presencial -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/claraLemos.jpg" alt="Clara Lemos">
+                        <div class="box_header_nome">
+                            <h2>Clara Lemos</h2>
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Consulta no local
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>18:00 - 19:00 - (1 hora)</span>
+                        <button class="btn">Ver endereço</button>
+                    </div>
+                </div>
+
+                <!-- conculta remota -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/lucianaDias.jpg" alt="Luciana Dias">
+                        <div class="box_header_nome">
+                            <h2>Luciana Dias</h2>
+                            <span>
+                                <i class="fa-solid fa-video"></i>
+                                Consulta remota
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>14:00 - 15:00 (1 hora)</span>
+                        <div>
+                            <button class="btn_primary">Ligar por vídeo</button>
+                            <button class="btn_disable">Ligar por vídeo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- conculta remota -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/marcosFerreira.jpg" alt="Marcos Correia">
+                        <div class="box_header_nome">
+                            <h2>Marcos Correia</h2>
+                            <span>
+                                <i class="fa-solid fa-video"></i>
+                                Consulta remota
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>17:20 - 18:00 (40 minutos)</span>
+                        <div>
+                            <button class="btn_primary">Ligar por vídeo</button>
+                            <button class="btn_disable">Ligar por vídeo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- consulta presencial -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/larissaSantana.jpg" alt="Larissa Santana">
+                        <div class="box_header_nome">
+                            <h2>Larissa Santana</h2>
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Consulta no local
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>18:00 - 19:00 - (1 hora)</span>
+                        <button class="btn">Ver endereço</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     
-        <!-- consulta remota -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/marcosFerreira.jpg" alt="Marcos Correia">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Marcos Correia</h3>
-                    <span>
-                        <i class="fa-solid fa-video"></i>
-                        Consulta remota
-                    </span>
+    <!-- consultas de quarta -->
+    <div class="row">
+        <div class="col-12">
+            <section>
+                <h2>Quarta-feira</h2>
+                <!-- consulta presencial -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/claraLemos.jpg" alt="Clara Lemos">
+                        <div class="box_header_nome">
+                            <h2>Clara Lemos</h2>
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Consulta no local
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>18:00 - 19:00 - (1 hora)</span>
+                        <button class="btn">Ver endereço</button>
+                    </div>
                 </div>
-               <!-- icon -->
-               <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
 
-            <hr>
-            <p>17:20 - 18:00 (40 minutos)</p>
-            <div class="boxButton">
-                <button class="btn1">Ligar por vídeo</button>
-                <button class="btn2">Ligar por áudio</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- lista amanhã -->
-    <section>
-        <h2>Amanhã</h2>
-        <!-- consulta no local -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/claraLemos.jpg" alt="Clara Lemos">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Clara Lemos</h3>
-                    <span>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Consulta no local
-                    </span>
+                <!-- conculta remota -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/lucianaDias.jpg" alt="Luciana Dias">
+                        <div class="box_header_nome">
+                            <h2>Luciana Dias</h2>
+                            <span>
+                                <i class="fa-solid fa-video"></i>
+                                Consulta remota
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>14:00 - 15:00 (1 hora)</span>
+                        <div>
+                            <button class="btn_primary">Ligar por vídeo</button>
+                            <button class="btn_disable">Ligar por vídeo</button>
+                        </div>
+                    </div>
                 </div>
-               <!-- icon -->
-               <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
 
-            <hr>
-            <p>18:00 - 19:00 - (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn3">Ver endereço</button>
-            </div>
-        </div>
-        
-        <!-- consulta remota -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/lucianaDias.jpg" alt="Luciana Dias">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Luciana Dias</h3>
-                    <span>
-                        <i class="fa-solid fa-video"></i>
-                        Consulta remota
-                    </span>
+                <!-- conculta remota -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/marcosFerreira.jpg" alt="Marcos Correia">
+                        <div class="box_header_nome">
+                            <h2>Luciana Dias</h2>
+                            <span>
+                                <i class="fa-solid fa-video"></i>
+                                Consulta remota
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>17:20 - 18:00 (40 minutos)</span>
+                        <div>
+                            <button class="btn_primary">Ligar por vídeo</button>
+                            <button class="btn_disable">Ligar por vídeo</button>
+                        </div>
+                    </div>
                 </div>
-                <!-- icon -->
-                <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
 
-            <hr>
-            <p>14:00 - 15:00 (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn1">Ligar por vídeo</button>
-                <button class="btn2">Ligar por áudio</button>
-            </div>
-        </div>
-
-        <!-- consulta remota -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/marcosFerreira.jpg" alt="Marcos Correia">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Marcos Correia</h3>
-                    <span>
-                        <i class="fa-solid fa-video"></i>
-                        Consulta remota
-                    </span>
+                <!-- consulta presencial -->
+                <div class="box">
+                    <!-- cabeçalho do box -->
+                    <div class="box_header">
+                        <!-- foto do paciente -->
+                        <img src="imagens/larissaSantana.jpg" alt="Larissa Santana">
+                        <div class="box_header_nome">
+                            <h2>Luciana Dias</h2>
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Consulta no local
+                            </span>
+                        </div>
+                        <img src="imagens/icon_chat.png" alt="chat" class="iconChat">
+                    </div>
+                    <!-- botões -->
+                    <div class="box_footer">
+                        <span>16:00 - 17:00 - (1 hora)</span>
+                        <button class="btn">Ver endereço</button>
+                    </div>
                 </div>
-                <!-- icon -->
-                <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
-
-            <hr>
-            <p>17:20 - 18:00 (40 minutos)</p>
-            <div class="boxButton">
-                <button class="btn1">Ligar por vídeo</button>
-                <button class="btn2">Ligar por áudio</button>
-            </div>
+            </section>
         </div>
-
-        <!-- consulta no local -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/larissaSantana.jpg" alt="Larissa Santana">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Larissa Santana</h3>
-                    <span>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Consulta no local
-                    </span>
-                </div>
-                <!-- icon -->
-                <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
-
-            <hr>
-            <p>16:00 - 17:00 - (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn3">Ver endereço</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- lista quarta-feira -->
-    <section>
-        <h2>Quarta-feira</h2>
-        <!-- consulta no local -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/claraLemos.jpg" alt="Clara Lemos">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Clara Lemos</h3>
-                    <span>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Consulta no local
-                    </span>
-                </div>
-                <!-- icon -->
-                <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
-
-            <hr>
-            <p>18:00 - 19:00 - (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn3">Ver endereço</button>
-            </div>
-        </div>
-
-        <!-- consulta remota -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/lucianaDias.jpg" alt="Luciana Dias">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Luciana Dias</h3>
-                    <span>
-                        <i class="fa-solid fa-video"></i>
-                        Consulta remota
-                    </span>
-                </div>
-                <!-- icon -->
-                <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
-
-            <hr>
-            <p>14:00 - 15:00 (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn1">Ligar por vídeo</button>
-                <button class="btn2">Ligar por áudio</button>
-            </div>
-        </div>
-
-        <!-- consulta remota -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/marcosFerreira.jpg" alt="Marcos Correia">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Luciana Dias</h3>
-                    <span>
-                        <i class="fa-solid fa-video"></i>
-                        Consulta remota
-                    </span>
-                </div>
-                <!-- icon -->
-                <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
-
-            <hr>
-            <p>17:20 - 18:00 (40 minutos)</p>
-            <div class="boxButton">
-                <button class="btn1">Ligar por vídeo</button>
-                <button class="btn2">Ligar por áudio</button>
-            </div>
-        </div>
-
-        <!-- consulta no local -->
-        <div class="box">
-            <div class="boxHeader">
-                <!-- imagem -->
-                <img src="imagens/larissaSantana.jpg" alt="Larissa Santana">
-                <!-- nome -->
-                <div class="boxName">
-                    <h3>Larissa Santana</h3>
-                    <span>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Consulta no local
-                    </span>
-                </div>
-                <!-- icon -->
-                <img src="imagens/icon_chat.png" alt="Icon chat" class="iconChat">
-            </div>
-
-            <hr>
-            <p>16:00 - 17:00 - (1 hora)</p>
-            <div class="boxButton">
-                <button class="btn3">Ver endereço</button>
-            </div>
-        </div>
-    </section>
+    </div>
 </body>
 </html>
