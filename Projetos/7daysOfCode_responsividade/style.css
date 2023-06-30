@@ -29,8 +29,15 @@
     display: table;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     font-size: 14px;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
 }
@@ -38,6 +45,10 @@ body {
 button {
     border: none;
     cursor: pointer;
+}
+
+section {
+    margin: 0;
 }
 
 /* foto de perfil e nome */
@@ -150,10 +161,59 @@ button.btn_disable {
 }
 
 button.btn {
-    width: 296px;
+    max-width: 290px;
     height: 48px; 
     color: #ffffff;
     border-radius: 8px;
     background-color: #4894FF;
     box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
 }
+
+/* botão mais ações */
+button.acoes {
+    width: 56px;
+    height: 56px;
+    color: #fff;
+    flex-shrink: 0;
+    position: fixed;
+    border-radius: 100%;
+    background-color: #4894FF;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    /* posição */
+    left: 80%;
+    bottom: 10%;
+}
+
+/* footer menu */
+footer {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    border-radius: 12px 12px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+    /* flexbox */
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > div {
+    gap: 5px;
+    display: flex;
+    color: #464646; 
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer span {font-size: 12px; }
+footer i { font-size: 18px;}
+
+.ativo { color: #4894FF;}
